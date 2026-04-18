@@ -111,6 +111,10 @@ public class PlayerMovement : MonoBehaviour
     }
     private void ApplyGravity()
     {
-        playerRB.AddForce(transform.up * gravitationalForce);
+        if(groundCheck.getIsGrounded() == false)
+        {
+            playerRB.AddForce(transform.up * gravitationalForce);
+        }
+        
     }
 }

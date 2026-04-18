@@ -8,6 +8,7 @@ TagManager:
   - Player Weapon
   - Enemy Weapon
   - Enemy
+  - Stairs
   layers:
   - Default
   - TransparentFX
